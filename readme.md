@@ -10,7 +10,7 @@ NOTE: `doctl` is not really necessary as the `makefile` just greps the token fro
 
 ## Spin Up the cluster
 
-Just run `make apply` and confirm with `yes` to make sure you agree with what will be provisioned. (If you fully trust this automation, add `-auto-approve` to avoid the prompt for future executions.)
+Just run `make init` once and then `make apply` and confirm with `yes` to make sure you agree with what will be provisioned. (If you fully trust this automation, add `-auto-approve` to avoid the prompt for future executions.)
 Finally run `alias kc="kubectl --kubeconfig kubeconfig.yaml"` to set your current shell to the newly created cluster and have fun. 
 
 When you're done run `make destroy` and all resources will be destroyed.
